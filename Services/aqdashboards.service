@@ -1,0 +1,11 @@
+[Unit]
+Description=air quality dashboards for internal usage
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/aqdashboards
+ExecStart=/home/ubuntu/Workground/dashalte3venv/bin/python Internal/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=example dashboard
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/aqdashboards
+ExecStart=/home/ubuntu/Workground/dashalte3venv/bin/python Example/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
